@@ -1,0 +1,21 @@
+{
+  "width": 1920,
+  "height": 1080,
+  "iterationCount": 15000000,
+  "outputPath": "pic5_from_json.png",
+  "threads": 6,
+  "seed": 987654,
+  "symmetryLevel": 5,
+  "functions": [
+    { "name": "swirl", "weight": 1.0 },
+    { "name": "horseshoe", "weight": 1.0 },
+    { "name": "sinusoidal", "weight": 0.5 },
+    { "name": "linear", "weight": 0.2 },
+    { "name": "heart", "weight": 0.8 }
+  ],
+  "affineParams": [
+    { "a": 0.7, "b": 0.1, "c": -0.1, "d": 0.1, "e": 0.7, "f": 0.0 },
+    { "a": 0.5, "b": -0.5, "c": 0.0, "d": 0.5, "e": 0.5, "f": 0.0 },
+    { "a": 0.2, "b": 0.8, "c": 0.1, "d": -0.8, "e": 0.2, "f": 0.1 }
+  ]
+}

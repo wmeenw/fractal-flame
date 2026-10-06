@@ -1,0 +1,15 @@
+{
+  "width": 800,
+  "height": 600,
+  "iterationCount": 10000,
+  "outputPath": "test_output.png",
+  "threads": 2,
+  "seed": 12345,
+  "symmetryLevel": 3,
+  "functions": [
+    { "name": "swirl", "weight": 1.0 }
+  ],
+  "affineParams": [
+    { "a": 0.5, "b": 0.0, "c": 0.0, "d": 0.0, "e": 0.5, "f": 0.0 }
+  ]
+}
