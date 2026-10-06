@@ -1,13 +1,17 @@
-# Домашнее задание 5 — фрактальное пламя
+# Fractal flame
 
-Генератор фракталов «фрактальное пламя» (fractal flame). Программа строит изображение по аффинным преобразованиям и нелинейным вариациям и сохраняет его в PNG.
+Домашнее задание 5 курса по Java. Генератор фракталов «фрактальное пламя»: строит изображение по аффинным преобразованиям и нелинейным вариациям и сохраняет его в PNG.
 
-- `FractalFlameGenerator`, `Point`, `AffineParams` — расчёт точек.
-- `variations/` — вариации: `Linear`, `Sinusoidal`, `Swirl`, `Heart`, `Horseshoe` и другие.
-- `ConfigLoader`, `ConfigValidator`, `ParamParser` — загрузка и проверка конфигурации из JSON.
-- `ImageRenderer` — вывод изображения.
-- `BenchmarkRunner` — замеры времени (`benchmark_results.csv`).
-- Примеры результатов: `pic1_basic.png` … `pic5_from_json.png`, конфигурация `config_pic5.json`.
+## Что сделано в качестве ДЗ
+
+- Генерация точек по аффинным преобразованиям (`FractalFlameGenerator`, `AffineParams`).
+- Набор вариаций: линейная, синусоидальная, swirl, heart, horseshoe и другие (`variations/`), создание через `VariationFactory`.
+- Загрузка конфигурации из JSON с проверкой (`ConfigLoader`, `ConfigValidator`, `ParamParser`).
+- Рендер изображения в PNG (`ImageRenderer`).
+- Замеры производительности (`BenchmarkRunner`, `benchmark_results.csv`).
+- Юнит- и интеграционные тесты (`src/test`).
+
+Примеры результатов: `pic1_basic.png` … `pic5_from_json.png`, конфигурация `config_pic5.json`.
 
 ## Сборка и запуск
 
@@ -15,6 +19,4 @@
 mvn clean package
 ```
 
-Тесты лежат в `src/test/java/org/example`.
-
-Исходный код взят из ветки `homework5` репозитория [wmeenw/JAVAhomework](https://github.com/wmeenw/JAVAhomework).
+Исходный код: ветка `homework5` репозитория [wmeenw/JAVAhomework](https://github.com/wmeenw/JAVAhomework).
